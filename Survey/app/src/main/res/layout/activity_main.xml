@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="409dp"
+    android:layout_height="729dp"
+    android:orientation="vertical"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="현재 사용중인 안드로이드 버전은?" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="107dp">
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="206dp"
+            android:layout_height="35dp"
+            android:text="2.3.3" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="210dp"
+            android:layout_height="35dp"
+            android:text="4.3" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="210dp"
+            android:layout_height="35dp"
+            android:text="4.4" />
+    </RadioGroup>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="185dp"
+            android:layout_height="wrap_content"
+            android:onClick="onClick"
+            android:text="DISPLAY IMAGE"
+            tools:ignore="OnClick" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/image"/>
+
+</LinearLayout>
